@@ -143,6 +143,7 @@ main {
     display: inline-block;
     padding: 12px 53px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button-primary {
@@ -182,18 +183,6 @@ main {
     margin-right: 54px;
 }
 
-.card::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(.png);
-        z-index: -1;
-}
-
 .card-text-light {
     color: #fff;
 }
@@ -225,15 +214,15 @@ main {
 }
 
 .sweet-basket {
-    background-image: url(../img/sweet-basket.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../img/sweet-basket.png);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -2;
 }
 
 .minimum-effort {
-    background-image: url(../img/minimum-effort.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../img/minimum-effort.png);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -2;
 }
