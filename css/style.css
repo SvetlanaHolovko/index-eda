@@ -6,6 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 23px;
 }
 
 #wrapper {
@@ -130,23 +131,109 @@ main {
 
 .slider-text {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 23px;
     max-width: 389px;
     margin-bottom: 32px;
 }
 
-.button-primary {
+.button {
     border-radius: 25px;
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
     display: inline-block;
     padding: 12px 53px;
+    text-decoration: none;
 }
 
-.slider-btn {
+.button-primary {
     background: #F47322;
-    text-decoration: none;
     color: #FFFFFF;
+}
+
+.button-default {
+    background-color: #FFFFFF;
+    color: #5F5F61;
+    border-radius: 50px;
+}
+
+.promo {
+    padding: 50px 0;
+}
+
+.cards-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 570px;
+    min-height: 380px;
+    position: relative;
+    padding: 36px 32px 31px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:not(:last-child) {
+    margin-right: 54px;
+}
+
+.card::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(.png);
+        z-index: -1;
+}
+
+.card-text-light {
+    color: #fff;
+}
+
+.card-header__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 21px;
+}
+
+.card-header__text {
+    font-weight: 500;
+    max-width: 170px;
+}
+
+.card-footer__price {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 8px;
+}
+
+.card-footer__delivery {
+    font-weight: 500;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.sweet-basket {
+    background-image: url(../img/sweet-basket.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.minimum-effort {
+    background-image: url(../img/minimum-effort.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
 }
