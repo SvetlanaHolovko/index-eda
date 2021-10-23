@@ -46,7 +46,7 @@ main {
 .search-input {
     border: none;
     background-color: transparent;
-    padding: 13px 20px;
+    padding: 13px 70px 13px 20px;
     width: 100%;
     line-height: 23px;
     color: #57565B;
