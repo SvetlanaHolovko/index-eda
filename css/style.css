@@ -75,8 +75,15 @@ main {
   color: #000000;
   padding: 16px 30px 17px;
   margin-right: 31px;
-  background: #ebebeb;
+  background-color: #ebebeb;
   border-radius: 50px;
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
+}
+
+.header-login:hover {
+  background-color: #ffffff;
+  border: 2px solid #5f5f61;
 }
 
 .header-shopping {
@@ -109,6 +116,7 @@ main {
   border-radius: 20px;
   padding: 77px 100px;
   min-height: 400px;
+  position: relative;
 }
 
 .slide-text-light {
@@ -125,6 +133,41 @@ main {
     url(../img/summer.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.slide-autumn {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/autumn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide-vitamins {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/vitamins.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  width: 100px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-button {
+  cursor: pointer;
 }
 
 .slide-title {
@@ -155,6 +198,11 @@ main {
 .button-primary {
   background: #f47322;
   color: #ffffff;
+  transition: background-color 0.3s linear;
+}
+
+.button-primary:hover {
+  background-color: #ffa871;
 }
 
 .button-default {
@@ -176,8 +224,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
-  /* margin: -20px; */
 }
 
 .card {
@@ -191,7 +237,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* margin: 20px; */
 }
 
 .card:not(:last-child) {
@@ -349,9 +394,14 @@ main {
   color: #49494f;
   text-decoration: none;
   margin-right: 58px;
+  transition: color 0.3s linear;
 }
 
 .categories-link.active {
+  color: #f37321;
+}
+
+.categories-link:hover {
   color: #f37321;
 }
 
@@ -435,6 +485,12 @@ main {
   line-height: 19px;
   color: #f37321;
   padding: 16px 25px;
+  transition: all 0.3s ease;
+}
+
+.outline-btn:hover {
+  background-color: #ffa871;
+  color: #fff;
 }
 
 .button-center {
@@ -473,6 +529,12 @@ main {
   padding: 30px 23px 25px 24px;
   text-align: center;
 }
+
+/* .advantages-card:hover {
+  background-color: #f37321;
+  border: 1px solid #f37321;
+  color: #fff;
+} */
 
 .advantages-card:not(:last-child) {
   margin-right: 37px;
@@ -527,6 +589,12 @@ main {
   text-decoration-line: underline;
   color: #000000;
   margin: 0 50px;
+  transition: all 0.3s ease;
+}
+
+.footer-nav__link:hover {
+  text-decoration-line: none;
+  color: #f37321;
 }
 
 .footer-social {
@@ -538,4 +606,8 @@ main {
 .footer-social__link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+.footer-social__link:hover {
+  fill: #f37321;
 }
