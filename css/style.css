@@ -111,7 +111,7 @@ main {
   bottom: -5px;
 }
 
-/* Slide */
+/* Slider =============================================================*/
 .slide {
   border-radius: 20px;
   padding: 77px 100px;
@@ -215,7 +215,7 @@ main {
   border: 2px solid #5f5f61;
 }
 
-/*Promo */
+/*Promo ==========================================*/
 .promo {
   padding: 50px 0;
 }
@@ -224,6 +224,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: -25px;
 }
 
 .card {
@@ -237,10 +238,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.card:not(:last-child) {
-  margin-right: 54px;
+  margin: 25px;
 }
 
 .card-text-light {
@@ -251,6 +249,7 @@ main {
   font-weight: 500;
   font-size: 24px;
   line-height: 23px;
+  margin: 0;
   margin-bottom: 21px;
 }
 
@@ -287,7 +286,7 @@ main {
   background-repeat: no-repeat;
 }
 
-/* Delivery */
+/* Delivery ========================================*/
 .delivery {
   padding: 50px 0 100px;
 }
@@ -365,7 +364,7 @@ main {
   background-color: #fef7fe;
 }
 
-/* Categories */
+/* Categories ===================================*/
 .categories {
   background-color: #f6f6f6;
   padding: 40px 0 60px;
@@ -407,6 +406,9 @@ main {
 
 .categories-content {
   display: flex;
+  justify-content: space-between;
+  margin: -15px;
+  margin-bottom: 62px;
 }
 
 .categories-card {
@@ -418,11 +420,7 @@ main {
   background-color: #fff;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  margin-bottom: 62px;
-}
-
-.categories-card:not(:last-child) {
-  margin-right: 37px;
+  margin: 15px;
 }
 
 .categories-card__img {
@@ -499,7 +497,7 @@ main {
   padding: 16px 104px;
 }
 
-/* Advantages*/
+/* Advantages ==================================*/
 .advantages {
   padding: 100px 0 202px;
 }
@@ -509,11 +507,13 @@ main {
   font-size: 32px;
   line-height: 23px;
   color: #000000;
+  margin: 0;
   margin-bottom: 52px;
 }
 
 .advantages-cards {
   display: flex;
+  margin: -15px;
 }
 
 .advantages-card {
@@ -528,16 +528,7 @@ main {
   overflow: hidden;
   padding: 30px 23px 25px 24px;
   text-align: center;
-}
-
-/* .advantages-card:hover {
-  background-color: #f37321;
-  border: 1px solid #f37321;
-  color: #fff;
-} */
-
-.advantages-card:not(:last-child) {
-  margin-right: 37px;
+  margin: 15px;
 }
 
 .advantages-card__img {
@@ -553,7 +544,6 @@ main {
   font-size: 16px;
   line-height: 23px;
   text-align: center;
-  color: #000000;
   max-width: 188px;
   margin: auto;
   margin-bottom: 13px;
@@ -565,9 +555,10 @@ main {
   line-height: 22px;
   text-align: center;
   color: #49494f;
+  margin: 0;
 }
 
-/* Footer */
+/* Footer =========================================*/
 .footer {
   background-color: #f6f6f6;
   padding: 40px 0;
@@ -610,4 +601,353 @@ main {
 
 .footer-social__link:hover {
   fill: #f37321;
+}
+
+/* Media ====================================== */
+@media (max-width: 1250px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .delivery-cards {
+    justify-content: center;
+  }
+
+  .categories-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .categories-card {
+    flex: 1 1 50%;
+    margin: 0;
+    margin: 15px;
+    max-width: calc(50% - 30px);
+  }
+
+  .advantages {
+    padding: 50px 0 100px;
+  }
+
+  .advantages-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .slide {
+    padding: 70px;
+  }
+
+  .minimum-effort {
+    background-position: right center;
+  }
+
+  .delivery-titile {
+    text-align: center;
+  }
+
+  .delivery-card {
+    width: calc(50% - 30px);
+  }
+
+  .advantages-title {
+    text-align: center;
+  }
+
+  .advantages-card {
+    width: calc(50% - 30px);
+  }
+
+  .categories-content {
+    margin-bottom: 30px;
+  }
+
+  .footer-nav__list {
+    padding-left: 15px;
+  }
+
+  .footer-nav__link {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+  }
+
+  .search-form {
+    order: 3;
+    margin: 15px 0;
+  }
+
+  .slide {
+    padding: 30px;
+  }
+
+  .slide-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .button-primary {
+    padding: 12px 35px;
+  }
+
+  .slide-vitamins {
+    background-position: right center;
+  }
+
+  .slide-summer {
+    background-position: right center;
+  }
+
+  .slide-autumn {
+    background-position: right center;
+  }
+
+  .promo {
+    padding: 30px 0;
+  }
+
+  .cards-inner {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .card {
+    margin: 15px;
+  }
+
+  .delivery {
+    padding: 30px 0;
+  }
+
+  .categories {
+    padding: 30px 0;
+  }
+
+  .categories-title {
+    margin-bottom: 30px;
+  }
+
+  .categories-tabs {
+    margin-bottom: 30px;
+  }
+
+  .categories-content {
+    margin-bottom: 30px;
+  }
+
+  .advantages {
+    padding: 30px 0;
+  }
+
+  .advantages-title {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-nav {
+    order: 5;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .delivery-titile {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .delivery-card {
+    width: 70%;
+  }
+
+  .categories-card {
+    max-width: 100%;
+  }
+
+  .advantages-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-nav {
+    justify-content: center;
+  }
+  .header-logo__img {
+    width: 100px;
+  }
+
+  .header-logo {
+    margin-right: 10px;
+  }
+
+  .header-auth {
+    margin-left: 0;
+  }
+
+  .header-login {
+    margin-right: 10px;
+    padding: 14px 20px;
+  }
+
+  .sliders {
+    padding-bottom: 10px;
+  }
+
+  .slide {
+    padding: 20px;
+  }
+
+  .slide-title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .slider-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .button-primary {
+    padding: 7px 17px;
+  }
+
+  .slider-buttons {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .promo {
+    padding: 20px 0;
+  }
+
+  .card {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .sweet-basket {
+    background-position: right center;
+  }
+
+  .card-footer__delivery {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    padding: 7px 17px;
+  }
+
+  .delivery {
+    padding: 20px 0;
+  }
+
+  .delivery-card {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .categories {
+    padding: 20px 0;
+  }
+
+  .categories-title {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .categories-content {
+    margin-bottom: 20px;
+  }
+
+  .categories-item {
+    margin-right: 15px;
+  }
+
+  .categories-link {
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 0;
+  }
+
+  .categories-card {
+    margin: 10px;
+  }
+
+  .advantages {
+    padding: 20px 0;
+  }
+
+  .advantages-title {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .advantages-card {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .advantages-card__img {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-logo {
+    width: 60%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-social {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-social__link {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .footer-nav__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
 }
