@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -209,10 +205,12 @@ main {
   background-color: #ffffff;
   color: #5f5f61;
   border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
 .button-default:hover {
   border: 2px solid #5f5f61;
+  color: #000;
 }
 
 /*Promo ==========================================*/
@@ -249,7 +247,6 @@ main {
   font-weight: 500;
   font-size: 24px;
   line-height: 23px;
-  margin: 0;
   margin-bottom: 21px;
 }
 
@@ -274,14 +271,14 @@ main {
 
 .sweet-basket {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/sweet-basket.png);
+    url(../img/sweet.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .minimum-effort {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/minimum-effort.png);
+    url(../img/minimum.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -296,7 +293,7 @@ main {
   font-size: 32px;
   line-height: 23px;
   color: #000000;
-  margin: 0 0 47px;
+  margin-bottom: 47px;
 }
 
 .delivery-cards {
@@ -318,6 +315,11 @@ main {
   width: 100%;
   height: 100%;
   object-fit: caver;
+  transition: transform 0.5s linear;
+}
+
+.delivery-img:hover {
+  transform: scale(1.2);
 }
 
 .delivery-tag {
@@ -375,7 +377,6 @@ main {
   font-size: 32px;
   line-height: 23px;
   color: #000000;
-  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -439,7 +440,7 @@ main {
   font-size: 20px;
   line-height: 23px;
   color: #000000;
-  margin: 0 0 13px;
+  margin-bottom: 13px;
 }
 
 .categories-card__text {
@@ -447,7 +448,7 @@ main {
   font-size: 14px;
   line-height: 23px;
   color: #b9b9be;
-  margin: 0 0 36px;
+  margin-bottom: 36px;
 }
 
 .categories-card__info {
@@ -507,7 +508,6 @@ main {
   font-size: 32px;
   line-height: 23px;
   color: #000000;
-  margin: 0;
   margin-bottom: 52px;
 }
 
@@ -529,6 +529,16 @@ main {
   padding: 30px 23px 25px 24px;
   text-align: center;
   margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.advantages-card:hover {
+  transform: translateY(-5px);
+}
+
+.advantages-card__link {
+  text-decoration: none;
+  color: #000;
 }
 
 .advantages-card__img {
@@ -555,7 +565,6 @@ main {
   line-height: 22px;
   text-align: center;
   color: #49494f;
-  margin: 0;
 }
 
 /* Footer =========================================*/
@@ -597,6 +606,8 @@ main {
 .footer-social__link {
   margin-left: 20px;
   text-decoration: none;
+  fill: #000;
+  transition: fill 0.3s ease;
 }
 
 .footer-social__link:hover {
@@ -804,6 +815,7 @@ main {
   .header-nav {
     justify-content: center;
   }
+
   .header-logo__img {
     width: 100px;
   }
