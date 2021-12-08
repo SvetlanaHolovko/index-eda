@@ -74,7 +74,7 @@ main {
   background-color: #ebebeb;
   border-radius: 50px;
   border: 2px solid transparent;
-  transition: all 0.3s linear;
+  transition: all 0.5s linear;
 }
 
 .header-login:hover {
@@ -121,32 +121,17 @@ main {
 }
 
 .slide-summer {
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.43) 40.45%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../img/summer.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/summer.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide-autumn {
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.43) 40.45%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../img/autumn.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/autumn.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .slide-vitamins {
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.43) 40.45%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../img/vitamins.png);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%), url(../img/vitamins.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -194,7 +179,7 @@ main {
 .button-primary {
   background: #f47322;
   color: #ffffff;
-  transition: background-color 0.3s linear;
+  transition: background-color 0.5s linear;
 }
 
 .button-primary:hover {
@@ -205,7 +190,7 @@ main {
   background-color: #ffffff;
   color: #5f5f61;
   border-radius: 50px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .button-default:hover {
@@ -270,15 +255,13 @@ main {
 }
 
 .sweet-basket {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/sweet.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/sweet.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .minimum-effort {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../img/minimum.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/minimum.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -394,7 +377,7 @@ main {
   color: #49494f;
   text-decoration: none;
   margin-right: 58px;
-  transition: color 0.3s linear;
+  transition: color 0.5s linear;
 }
 
 .categories-link.active {
@@ -484,7 +467,7 @@ main {
   line-height: 19px;
   color: #f37321;
   padding: 16px 25px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .outline-btn:hover {
@@ -529,11 +512,24 @@ main {
   padding: 30px 23px 25px 24px;
   text-align: center;
   margin: 15px;
-  transition: transform 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .advantages-card:hover {
-  transform: translateY(-5px);
+  /*transform: translateY(-5px);*/
+  background-color: #f37321;
+}
+
+.advantages-card:hover .advantages-card__title {
+  color: #fff;
+}
+
+.advantages-card:hover .advantages-card__text {
+  color: #fff;
+}
+
+.advantages-card:hover .advantages-card__img {
+  fill: #fff;
 }
 
 .advantages-card__link {
@@ -544,9 +540,11 @@ main {
 .advantages-card__img {
   width: 60px;
   height: 60px;
-  display: block;
+  display: inline-block;
   margin: auto;
   margin-bottom: 34px;
+  fill: #f37321;
+  transition: all 0.5s ease;
 }
 
 .advantages-card__title {
@@ -557,6 +555,7 @@ main {
   max-width: 188px;
   margin: auto;
   margin-bottom: 13px;
+  transition: all 0.5s ease;
 }
 
 .advantages-card__text {
@@ -565,6 +564,7 @@ main {
   line-height: 22px;
   text-align: center;
   color: #49494f;
+  transition: all 0.5s ease;
 }
 
 /* Footer =========================================*/
@@ -589,7 +589,7 @@ main {
   text-decoration-line: underline;
   color: #000000;
   margin: 0 50px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .footer-nav__link:hover {
@@ -606,11 +606,17 @@ main {
 .footer-social__link {
   margin-left: 20px;
   text-decoration: none;
-  fill: #000;
-  transition: fill 0.3s ease;
 }
 
-.footer-social__link:hover {
+.footer-social__icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  fill: #000;
+  transition: fill 0.5s ease;
+}
+
+.footer-social__icon:hover {
   fill: #f37321;
 }
 
