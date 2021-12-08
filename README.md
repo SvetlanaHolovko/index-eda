@@ -11,3 +11,4 @@
 - Swiper Slider JS
 - Flexbox
 - BEM-Naming
+- SVG-Sprite
